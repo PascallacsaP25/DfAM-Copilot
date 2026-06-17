@@ -1,5 +1,5 @@
 
-**Quick links:** [Instructions](instructions.md) · [FLOW.json](FLOW_dfam_tutor_v1.json) · [Screenshots](screenshots.md) · [Database](Data/Github_Test.CSV)
+**Quick links:** [Instructions](instructions.md) · [FLOW.json](FLOW_dfam_tutor_v1.json) · [Screenshots](screenshots.md) · [Database](Data/Github_Test.csv)
 
 # Structure of the GPT
 
