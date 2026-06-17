@@ -10,6 +10,7 @@ This page documents the customised GPT described in "A concept for AI supported 
 - Workflow configuration: FLOW.json
 - System instructions: instructions.md
 - Example interactions: screenshots.md
+- Database: data/Github_Test.csv
 
 ## Purpose
 
