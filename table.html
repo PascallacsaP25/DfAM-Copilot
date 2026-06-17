@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DfAM Repository</title>
+
+    <link rel="stylesheet"
+    href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+
+<body>
+
+<h1>DfAM Repository</h1>
+
+<table id="myTable" class="display"></table>
+
+<script>
+
+Papa.parse("data/Github_Test.csv", {
+    download: true,
+    header: true,
+
+    complete: function(results) {
+
+        let columns = Object.keys(results.data[0]).map(col => ({
+            title: col,
+            data: col
+        }));
+
+        $('#myTable').DataTable({
+            data: results.data,
+            columns: columns
+        });
+    }
+});
+
+</script>
+
+</body>
+</html>
